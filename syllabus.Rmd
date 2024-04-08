@@ -1,0 +1,109 @@
+---
+title: "Syllabus"
+subtitle: "BIOL 6980: Wildlife Statistics and Analysis in Program R"  
+output: distill::distill_article
+---
+
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,warning = FALSE, message = FALSE,
+  comment = "#>"
+)
+```
+
+# LOGISTICS
+
+**Lecture**: Tuesday and Thursday 1:30-2:45  
+**Location**: TBD  
+**Credits**: 3  
+
+# INSTRUCTORS
+Dr. Allison Keever  
+akeever@tntech.edu  
+Office: PENN 419  
+Office hours: By appointment 
+
+Dr. Bradley Cohen
+bcohen@tntech.edu
+Office: PENN 306
+Office hours: By appointment 
+
+
+# COURSE DESCRIPTION
+
+Animals are inextricably influenced by the complexity, stochasticity, and juxtaposition of landscape features. More so, the spatial arrangement of these biotic and abiotic features shape the availability of resources and predation risk, which in turn affects individual behavior and space use. This class will introduce students to common concepts in spatial and landscape ecology and demonstrate how to accurately measure spatial metrics at the individual and landscape-scale. We will cover critical concepts in spatial and landscape ecology including: space use, habitat selection, occupancy, and scale. 
+
+# COURSE OBJECTIVES
+
+Familiarize students with concepts central to spatial and landscape ecology. Familiarize students with different techniques used to collect and analyze spatial and landscape data.
+
+A secondary objective of this course is to provide you with tools and best practices for storing, manipulating, and analyzing ecological data and developing reproducible code for analyses. In my experience, most graduate students are well trained in methods for data collection and, to a degree, data analysis. However, most students do not receive formal training on the steps between data collection and reporting results from statistical models (e.g., proofing, storing, and formatting data; developing well-documented, reproducible analyses; preparing reports). Advancing the field of ecology also requires a scientific community capable of judging the quality of the code, interpretation, reporting of quantitative models. Graduate students often get few opportunities to critically review the work of their peers or to get constructive feedback on their reviews. The lab portion of this course is specifically designed to provide you with hands on experience with:  
+
+* Best practices for cleaning, formatting, and storing data using R
+* Generating reproducible analyses and reports using R and R Markdown
+* Providing critical peer review of scientific code and reports
+
+# PREREQUISITES
+
+Students should have at least one semester of both basic ecology and introductory statistics. Although we will thoroughly cover the foundational principles of common statistical models, a basic understanding of ecological theory and statistical inference will be very helpful.  
+ 
+All lab activities for this course will rely heavily on the statistical programming language R (and associated software, including RStudio, JAGS, and git). During the first few weeks, each lab session will begin with a tutorial on these tools so students are not expected to be experts prior to the course. However, we will quickly move into activities that require some degree of R proficiency so I highly recommend that you have a basic understanding of programming in R (e.g., importing/exporting & manipulating data objects, visualizing data) prior to this course. If you find yourself struggling with any aspects of using R, please seek individual help during office hours. The earlier we can get you up to speed, the more painless the remainder of the semester will be.  
+
+
+# COURSE FORMAT
+
+This course will be taught using a combined lecture/lab structure. During each class, I will provide a brief lecture to introduce important concepts. At the beginning of the semester, lectures will likely take up the majority of class time as we go over the basics. As the semester progresses and we move towards implementing these concepts to fit ecological models, class time will include more "lab" activities. These activities will be designed to reinforce and clarify lecture topics, allowing students to get hands on experience manipulating, analyzing, and visualizing data. All class materials, including lecture slides, computer code, lab documents, and data, will be posted on the course website prior to class. 
+
+# INSTRUCTIONAL PLATFORM/MATERIALS 
+
+The class website can be found by accessing iLearn, which you can link to from the Students menu on top of the Tennessee Tech home page. All materials for class exercises will be posted beforehand on iLearn. Because this class will include some hands-on experience using different landscape/spatial analyses in program R, students should download program R and RStudio ( https://www.rstudio.com/ ) onto their laptop.
+
+
+
+# ATTENDANCE
+
+As graduate students who willingly signed up for this course, I presume that you are eager to learn the material and are self-motivated enough to put in the required effort. For this reason, I do not set a formal attendance policy. However, we will cover a lot of material over the course of the semester and each topic will build on concepts from previous weeks. As a result, missing even a few lectures or labs will make it difficult for you to fully master the learning outcomes described above. If you know you will be missing any lectures or labs, please contact me in advance so we can make sure you do not get too far behind on the material. 
+
+### A note on fieldwork
+
+I realize that many students have field work obligations during the spring semester. If you need to take this course but know in advance that you will be in the field for a portion of the semester, please let me know ASAP so we can discuss whether field work will be a barrier to taking the course or merely an inconvenience. This distinction will mainly be a function of how long and when you will miss class. If these absences are relatively few, taking the course may still be an option. I will do my best to record lectures and make them available via Canvas. Students will still be expected to complete and turn in any assignments they miss. If you are going to miss too many classes or will be unable to complete the assignments while you're in the field, it may be better to take the class at a time when your field commitments are smaller. 
+
+
+# GRADING 
+
+Reading Assignments (25%): This course emphasizes readings from the recent primary literature, and typically 1-2 papers will be discussed each week. Every student is expected to have read the assignments before class and be prepared to discuss the papers. Responsibility for leading discussion will be rotated among students. Discussion leaders should raise questions or issues to be discussed; be prepared with an evaluation of the significant contributions of the paper, and facilitate discussion among the group. Students are welcome to bring any other materials to class that may enhance discussion or learning of topics covered in these papers - the goal here is for you to learn the material.
+
+Discussion (25%): Discussions are only effective for all when everyone is prepared and has perspectives to contribute. Everyone is expected to have read the assignment before class and given thought to the paper’s content and context. A good strategy for being prepared is to write down a couple of questions or observations about each paper as you are reading it. This class benefits tremendously from the diverse interests and backgrounds of the students, and we all learn a lot by listening to one another! The point of these papers is to demonstrate the applicability of the concepts we learn in class, which we hope will help you with ideas for your thesis/dissertation research!
+
+Incorporating Class Concepts Into Your Project Paper and Presentation (50%): Details to be provided later in semester. 
+
+
+# GRADING SCALE
+
+```{r grading, echo=FALSE}
+library(kableExtra)
+grades <- data.frame(Grade = c("A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "F"),
+                       Percent = c("93-100%", "90-92.9%", 
+                                   "87-89.9%", "83-86.9%", "80-82.9%", 
+                                   "77-79.9%", "73-76.9%", "70-72.9%",
+                                   "67-69.9%", "60-66.9%", "59.9% and below"),
+                       Points = c("186-200", "180-185", 
+                                   "174-179", "166-173", "160-165", 
+                                   "154-159", "146-153", "140-145",
+                                   "134-139", "126-133", "0-125"))
+
+grades %>%
+  kable("html", col.names = c("GRADE", "% RANGE", "POINT RANGE"), align = 'c') %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = TRUE)
+
+```
+
+
+# STUDENT ACADEMIC MISCONDUCT POLICY
+
+Maintaining high standards of academic integrity in every class at Tennessee Tech is critical to the reputation of Tennessee Tech, its students, alumni, and the employers of Tennessee Tech graduates. Academic Misconduct is defined in the student handbook as “any action or attempted action that may result in creating an unfair academic advantage for oneself or an unfair academic advantage or disadvantage for any other member or members of the academic community. This includes a wide variety of behaviors such as cheating, plagiarism, altering academic documents or transcripts, gaining access to materials before they are intended to be available, and helping a friend to gain an unfair academic advantage.” The Student Academic Misconduct Policy describes the definitions of academic misconduct and policies and procedures for addressing Academic Misconduct at Tennessee Tech. For details, view the Tennessee Tech’s Policy 217 – Student Academic Misconduct at Policy Central. Plagiarism is one form of academic misconduct. In the student handbook, plagiarism is defined as “use of intellectual material produced by another person without acknowledging its source, for example: a. Wholesale copying of passages from works of others into one self’s homework, essay, term paper, or dissertation without acknowledgment. b. Use of the views, opinions, or insights of another without acknowledgment. c. Paraphrasing of another person’s characteristic or original phraseology, metaphor, or other literary device without acknowledgment. When you use (for example, quote or even summarize or paraphrase) someone else’s media, words, data, ideas, or other works, you must cite your source. You should be especially careful to avoid plagiarizing Internet sources (for example, e-mail, chat rooms, Web sites, or discussion groups). It does not matter whether you borrow material from print sources, from the Internet, from on-line data bases, or from interviews. Failure to cite your source is plagiarism. Students who plagiarize may receive an “F” or a “0” for the assignment, or an “F" for the course.
+
+# EDUCATIONAL ACCOMODATION
+
+Students with a disability requiring accommodations should contact the Accessible Education Center (AEC). An Accommodation Request (AR) should be completed as soon as possible, preferably by the end of the first week of the course. The AEC is located in the Roaden University Center, Room 112; phone 372-6119. For details, view Tennessee Tech‘s Policy 340 – Services for Students with Disabilities, at Policy Central.

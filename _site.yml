@@ -1,0 +1,25 @@
+name: "."
+title: "BIOL6980: Wildlife Statistics and Analysis in Program R"
+description: |
+  Wildlife Statistics and Analysis in Program R
+output_dir: "docs"
+navbar:
+  left: 
+    - icon: fa-home
+      href: index.html
+  right:
+    - text: "Syllabus"
+      href: syllabus.html
+    - text: "Schedule"
+      href: schedule.html
+    - text: "Lectures"
+      menu:
+        - text: "Lecture 0: Introduction to BIOL6980"
+          href: Lectures/Lecture0/Lecture0.html
+    - text: "Labs"
+      menu:
+        - text: "Projects and directories"
+          href: Labs/projects.html
+    - icon: fab fa-github
+    - href: https://github.com/akeever2/EVSB7970 
+output: distill::distill_article
