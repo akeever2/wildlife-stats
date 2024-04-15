@@ -1,7 +1,7 @@
 ---
 title: "Lecture 0"
 subtitle: "Course overview"
-author: "<br/><br/><br/>BIOL6980 (Spring 2020)"
+author: "<br/><br/><br/>BIOL 6980 (Spring 2020)"
 output:
   xaringan::moon_reader:
     css: ["default", "custom.css", "custom-fonts.css"]
@@ -19,50 +19,56 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = 'center', warning=FALSE, message
 
 ```
 
-# LOGISTICS
+# LOGISTICS  
 
+<br> 
 **Lecture**: Tuesday and Thursday 1:30-2:45 BNR 113  
 **Credits**: 3  
 
----
-# INSTRUCTOR
+<br>
 
-#### Dr. Allison Keever  
+### INSTRUCTOR
+
+#### [Dr. Allison Keever](https://ackeeve.netlify.app/)  
 [akeever@tntech.edu](akeever@tntech.edu)   
 **Office**: PENN 419   
-**Office hours**: Monday and Wednesday 1:00-2:30 (or by appointment)
+**Office hours**: By appointment
 
 
 ---
 # COURSE FORMAT
 
-Refer to [syllabus](https://rushinglab.github.io/WILD6900/articles/syllabus.html)
+Refer to [syllabus](https://akeever2.github.io/wildlife-stats/syllabus.html)
 
 ---
 class: inverse, center, middle
 
-# WHY BAYESIAN? 
+# Why Use Statistics? 
 
 ---
-## Why Bayesian?
+## Role of Statistics in Science?
 
-**Philosophical advantages**  
-<br/>
+####Science is a search for truth through accumulation of facts   
 --
-1) Probabilistic treatment of all unknown quantities  
-<br/>
-
+- Truth - the way things really are, **never known**  
 --
-2) Coherent framework for incorporating prior knowledge into analysis  
-<br/>
-
+- Facts - measurement of observed state, estimate of truth, **DISPUTABLE**  
 --
-3) Proper accounting of uncertainty  
-<br/>
 
+
+.pull-left[
+#### Statistics will always give you  
+
+1) Estimate of truth  
+2) Estimate of uncertainty  
+]
 --
-4) Ease of estimating latent variables (and uncertainty)
+.pull-right[
+#### 2 reasons you can never know truth  
 
+1) There will always be some measurement error  
+2) Sampling or process error, usually only taking a sample of the population  
+]
 ---
 ## Why Bayesian?
 
